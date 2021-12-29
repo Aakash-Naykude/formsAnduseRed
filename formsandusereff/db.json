@@ -1,0 +1,30 @@
+{
+  "form": [
+    {
+      "id": 1,
+      "Name": "form.Name",
+      "Age": "form.Age",
+      "Adress": "form.Adress",
+      "Department": "form.Department",
+      "Salary": "form.Salary",
+      "MaritalS": "form.MaritalS",
+      "Profile": "form.Profile"
+    },
+    {
+      "id": "HfFkR_AR",
+      "Name": "sd",
+      "Age": "54",
+      "Adress": "645",
+      "Salary": "456",
+      "MaritalS": "Married"
+    },
+    {
+      "id": "nwsuSRCS",
+      "Name": "sd",
+      "Age": "54",
+      "Adress": "645",
+      "Salary": "456",
+      "MaritalS": "Married"
+    }
+  ]
+}
