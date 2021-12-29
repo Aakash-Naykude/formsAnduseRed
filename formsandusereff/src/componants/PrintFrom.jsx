@@ -58,15 +58,19 @@ export const PrintForm = () => {
   };
 
   const handleSort = () => {
-    var newlist = list.sort((a, b) => b.Salary - a.Salary);
-    setList([...list, newlist]);
-    console.log(list);
+    fetch(`http://localhost:5000/api/form?_sort=Salary&_order=asc`)
+      .then((d) => d.json())
+      .then((res) => {
+        console.log(res)
+        setList(res);
+      });
   };
-  const onlyFive = () => {};
   return (
     <>
       <Form getData={handleData} />
-      <button disabled={page === 1} onClick={() => setPage(page - 1)}>Prev Page</button>
+      <button disabled={page === 1} onClick={() => setPage(page - 1)}>
+        Prev Page
+      </button>
       <button onClick={handleSort}>Sort By Salary from high to low</button>
       <button onClick={() => setPage(page + 1)}>Next Page</button>
       <h4>Page : {page}</h4>
