@@ -116,7 +116,7 @@ export const Form = ({getData}) => {
             </td>
           </tr>
         </table>
-        <input type="submit" name="Submit" />
+        <input className="delete" type="submit" name="Submit" />
       </form>
     </>
   );

@@ -5,3 +5,10 @@ td{
     margin: auto;
     border: 3px solid black;
 }
+
+.delete{
+    background-color: greenyellow;
+    width: 100px;
+    height: 30px;
+    border: none;
+}

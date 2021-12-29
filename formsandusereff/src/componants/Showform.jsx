@@ -1,5 +1,6 @@
 import "../componants/show.css";
 export const ShowForm = ({
+  id,
   Name,
   Age,
   Adress,
@@ -7,10 +8,11 @@ export const ShowForm = ({
   Salary,
   MaritalS,
   Profile,
+  handleDelete,
 }) => {
   return (
     <>
-      <table  className="listb">
+      <table className="listb">
         <tr>
           <td>{Name}</td>
           <td>{Age}</td>
@@ -19,7 +21,9 @@ export const ShowForm = ({
           <td>{Salary}</td>
           <td>{Profile}</td>
           <td>{MaritalS}</td>
-          <td><button>Delete Details?</button></td>
+          <td>
+            <button onClick={() => handleDelete(id)}>Delete Details?</button>
+          </td>
         </tr>
       </table>
     </>

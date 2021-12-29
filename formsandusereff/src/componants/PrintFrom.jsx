@@ -5,8 +5,15 @@ import "../componants/print.css";
 import { nanoid } from "nanoid";
 export const PrintForm = () => {
   const [list, setList] = useState([]);
+  let newList = async () => {
+    let resp = await fetch("http://localhost:5000/api/form");
+    let data = await resp.json();
+    return data;
+  };
+  newList().then((e) => {
+    console.log(e)
+  });
   const handleData = async (form) => {
-    // console.log(form.Name);
     const payload = {
       id: nanoid(8),
       Name: form.Name,
@@ -28,15 +35,27 @@ export const PrintForm = () => {
         },
       });
       let data = await resp.json();
-      console.log(data);
     } catch (e) {
       console.log(e);
     }
   };
-  console.log(list);
+  const handleDelete = async (id) => {
+    setList(list.filter((list) => list.id !== id));
+
+    let resp = await fetch(`http://localhost:5000/api/form/${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  };
+  const handleSort = ()=>{
+    
+  }
   return (
     <>
       <Form getData={handleData} />
+      <button onClick={handleSort}>Sort</button>
       <table>
         <tr>
           <td className="listhead">Name</td>
@@ -50,7 +69,7 @@ export const PrintForm = () => {
         </tr>
       </table>
       {list.map((e) => (
-        <ShowForm {...e} />
+        <ShowForm key={e.id} {...e} handleDelete={handleDelete} />
       ))}
     </>
   );
