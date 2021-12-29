@@ -4,12 +4,15 @@ import { ShowForm } from "../componants/Showform.jsx";
 import "../componants/print.css";
 import { nanoid } from "nanoid";
 export const PrintForm = () => {
-  const [list, setList] = useState([]);
+  let [list, setList] = useState([]);
+
+  let [page, setPage] = useState(1);
+
   useEffect(() => {
-    getTodo();
-  }, []);
-  const getTodo = () => {
-    fetch("http://localhost:5000/api/form")
+    getTodo(page);
+  }, [page]);
+  const getTodo = (page) => {
+    fetch(`http://localhost:5000/api/form?_page=${page}&_limit=3`)
       .then((d) => d.json())
       .then((res) => {
         setList(res);
@@ -25,6 +28,7 @@ export const PrintForm = () => {
       Salary: form.Salary,
       MaritalS: form.MaritalS,
       Profile: form.Profile,
+      ProfileLink: form.ProfileLink,
     };
     setList([...list, payload]);
 
@@ -52,15 +56,20 @@ export const PrintForm = () => {
       },
     });
   };
+
   const handleSort = () => {
     var newlist = list.sort((a, b) => b.Salary - a.Salary);
-    setList(newlist);
-    console.log(newlist);
+    setList([...list, newlist]);
+    console.log(list);
   };
+  const onlyFive = () => {};
   return (
     <>
       <Form getData={handleData} />
-      <button onClick={handleSort}>Sort</button>
+      <button disabled={page === 1} onClick={() => setPage(page - 1)}>Prev Page</button>
+      <button onClick={handleSort}>Sort By Salary from high to low</button>
+      <button onClick={() => setPage(page + 1)}>Next Page</button>
+      <h4>Page : {page}</h4>
       <table>
         <tr>
           <td className="listhead">Name</td>

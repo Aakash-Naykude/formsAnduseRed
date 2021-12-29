@@ -1,6 +1,10 @@
 .listb>tr>td{
-    width: 12.%;
+    width: 200px
 }
 .listb{
     border: 1px solid greenyellow;
+}
+.imgs{
+    width: 180px;
+    height: 100px;
 }

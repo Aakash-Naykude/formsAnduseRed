@@ -1,7 +1,7 @@
 import { type } from "@testing-library/user-event/dist/type";
 import { useRef, useState } from "react";
 import "../componants/form.css";
-export const Form = ({getData}) => {
+export const Form = ({ getData }) => {
   let IsMarried;
   const [form, setFrom] = useState(null);
   const fileRef = useRef();
@@ -25,7 +25,7 @@ export const Form = ({getData}) => {
   };
   const submittedData = (e) => {
     e.preventDefault();
-    getData(form)
+    getData(form);
     //console.log(form, fileRef.current.files[0]);
   };
   return (
@@ -111,6 +111,16 @@ export const Form = ({getData}) => {
                   type="file"
                   name="Profile"
                   ref={fileRef}
+                />
+              </label>
+            </td>
+            <td>
+              <label>
+                Profile Pic Link :
+                <input
+                  onChange={handleChange}
+                  type="text"
+                  name="ProfileLink"
                 />
               </label>
             </td>
