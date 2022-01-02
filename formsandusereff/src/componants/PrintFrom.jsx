@@ -57,11 +57,11 @@ export const PrintForm = () => {
     });
   };
 
-  const handleSort = () => {
+  const handleSort = () => {  
     fetch(`http://localhost:5000/api/form?_sort=Salary&_order=asc`)
       .then((d) => d.json())
       .then((res) => {
-        console.log(res)
+        console.log(res);
         setList(res);
       });
   };
