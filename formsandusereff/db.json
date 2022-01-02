@@ -1,95 +1,58 @@
 {
   "form": [
     {
-      "id": "sAArJpeW",
-      "Name": "546",
-      "Age": "15",
-      "Adress": "56",
-      "Department": "Auto mobile",
-      "Salary": 112,
-      "MaritalS": "Not Married",
-      "ProfileLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAEb4vYaXPxxMMFRmrz4asb49Dz0PkNu1cPw&usqp=CAU"
+      "id": "4FDhXb3v",
+      "Name": "abc",
+      "Age": "12",
+      "Adress": "12",
+      "Department": "Computer",
+      "Salary": 123,
+      "Profile": "blob:http://localhost:3000/c91c582c-5770-46f9-85c9-4983e583ff6b"
     },
     {
-      "id": "jrF1NKpw",
-      "Name": "546",
-      "Age": "15",
-      "Adress": "56",
-      "Department": "Auto mobile",
-      "Salary": 11256,
-      "MaritalS": "Not Married",
-      "ProfileLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAEb4vYaXPxxMMFRmrz4asb49Dz0PkNu1cPw&usqp=CAU"
+      "id": "AOgvXxiC",
+      "Name": "abc",
+      "Age": "12",
+      "Adress": "12",
+      "Department": "Computer",
+      "Salary": 1235,
+      "Profile": "blob:http://localhost:3000/c91c582c-5770-46f9-85c9-4983e583ff6b"
     },
     {
-      "id": "nal26eFk",
-      "Name": "546",
-      "Age": "15",
-      "Adress": "56",
-      "Department": "Auto mobile",
-      "Salary": 56,
-      "MaritalS": "Not Married",
-      "ProfileLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAEb4vYaXPxxMMFRmrz4asb49Dz0PkNu1cPw&usqp=CAU"
+      "id": "2vMGYqFM",
+      "Name": "abc",
+      "Age": "12",
+      "Adress": "12",
+      "Department": "Computer",
+      "Salary": 66,
+      "Profile": "blob:http://localhost:3000/c91c582c-5770-46f9-85c9-4983e583ff6b"
     },
     {
-      "id": "1UOzN74b",
-      "Name": "546",
-      "Age": "15",
-      "Adress": "56",
-      "Department": "Auto mobile",
-      "Salary": 56,
-      "MaritalS": "Not Married",
-      "ProfileLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAEb4vYaXPxxMMFRmrz4asb49Dz0PkNu1cPw&usqp=CAU"
+      "id": "TuFdWMTb",
+      "Name": "abc",
+      "Age": "12",
+      "Adress": "12",
+      "Department": "Computer",
+      "Salary": 423,
+      "Profile": "blob:http://localhost:3000/c91c582c-5770-46f9-85c9-4983e583ff6b"
     },
     {
-      "id": "GCQvQrfE",
-      "Name": "aakash",
-      "Age": "23",
-      "Adress": "abc",
-      "Department": "Auto mobile",
-      "Salary": 456,
-      "MaritalS": "Not Married",
-      "Profile": "C:\\fakepath\\god-lord-krishna-wallpaper-preview (1).jpg",
-      "ProfileLink": "https://www.google.com/search?q=profile+image&rlz=1C1CHBF_enIN958IN958&sxsrf=AOaemvJWHEiOxzK4zDXdzOxr48eUjcIZkw:1640799889843&tbm=isch&source=iu&ictx=1&fir=H6pHpB03ZEAgeM%252Cwg0CyFWNfK7o5M%252C_%253B6LZBULRxg_WfYM%252Cb5C9ViMmmhpq-M%252C_%253BB3G4vEo9lSBh0M%252CFvQHUVZ-cx81xM%252C_%253BifTSkpz9J2bh_M%252CbNcOzSNtObF5xM%252C_%253Blcjtk8drNcGL8M%252COgWk3wP_2xVHMM%252C_%253BgRmIHR3owD_V0M%252CpmE0x0RqkiBF7M%252C_%253BeHQKa74ZnnpTfM%252CSixlWtBpRVa7SM%252C_%253BTUPxmKQ-sparcM%252CFvQHUVZ-cx81xM%252C_%253BC7pA_LYt9qMKyM%252CMG0JGB0B8kPXNM%252C_%253BJpaFCmffhUdABM%252CeirPelkp9eoYkM%252C_%253BSsGCLunXgu6i1M%252Cb5C9ViMmmhpq-M%252C_%253B-h20Jdis7Qx6mM%252C1OYXNPk0ZutdDM%252C_%253BjAbbSdWZuoI5VM%252CbNcOzSNtObF5xM%252C_%253BS2NNOWEtx4Sh8M%252C9DRWIkHC4pkATM%252C_%253BA1JLS0S6wZDMMM%252Cb5C9ViMmmhpq-M%252C_%253BvzXbYZ4nxFQ_JM%252Ceqb1SkSz95U9yM%252C_%253Bbn2FhB9xAX_09M%252Chv8ztA9-GtKh5M%252C_&vet=1&usg=AI4_-kStRS2_WRuYaIEZdopW0-4LZ0EPMw&sa=X&ved=2ahUKEwi5jdP0x4n1AhW9klYBHdQgB6AQ9QF6BAgSEAE#imgrc=ifTSkpz9J2bh_M"
+      "id": "iehjlj8A",
+      "Name": "abc",
+      "Age": "12",
+      "Adress": "12",
+      "Department": "Computer",
+      "Salary": 10000,
+      "Profile": "blob:http://localhost:3000/c91c582c-5770-46f9-85c9-4983e583ff6b"
     },
     {
-      "id": "vlIyr7TZ",
-      "Name": "645",
-      "Age": "564",
-      "Adress": "45",
-      "Department": "Auto mobile",
-      "Salary": 456,
-      "MaritalS": "Married",
-      "ProfileLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAEb4vYaXPxxMMFRmrz4asb49Dz0PkNu1cPw&usqp=CAU"
-    },
-    {
-      "id": "CWoPsnX1",
-      "Name": "645",
-      "Age": "564",
-      "Adress": "45",
-      "Department": "Auto mobile",
-      "Salary": 458,
-      "MaritalS": "Not Married",
-      "ProfileLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAEb4vYaXPxxMMFRmrz4asb49Dz0PkNu1cPw&usqp=CAU"
-    },
-    {
-      "id": "S0k_thqD",
-      "Name": "645",
-      "Age": "564",
-      "Adress": "45",
-      "Department": "Auto mobile",
-      "Salary": 865,
-      "MaritalS": "Not Married",
-      "ProfileLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAEb4vYaXPxxMMFRmrz4asb49Dz0PkNu1cPw&usqp=CAU"
-    },
-    {
-      "id": "ZIFzX63q",
-      "Name": "645",
-      "Age": "564",
-      "Adress": "45",
-      "Department": "Auto mobile",
-      "Salary": 758,
-      "MaritalS": "Not Married",
-      "ProfileLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAEb4vYaXPxxMMFRmrz4asb49Dz0PkNu1cPw&usqp=CAU"
+      "id": "SU_uF0jl",
+      "Name": "abc",
+      "Age": "12",
+      "Adress": "12",
+      "Department": "Computer",
+      "Salary": 789,
+      "Profile": "blob:http://localhost:3000/c91c582c-5770-46f9-85c9-4983e583ff6b"
     }
   ]
 }

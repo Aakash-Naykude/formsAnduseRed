@@ -2,31 +2,18 @@ import { type } from "@testing-library/user-event/dist/type";
 import { useRef, useState } from "react";
 import "../componants/form.css";
 export const Form = ({ getData }) => {
-  let IsMarried;
-  const [form, setFrom] = useState(null);
-  const fileRef = useRef();
+  const [form, setForm] = useState(null);
+  const fileRef = useRef(null);
   const handleChange = (e) => {
-    let { name, value, checked, type } = e.target;
+    let { name, value, type, checked } = e.target;
     value = type === "checkbox" ? checked : value;
-
-    if (checked === true) {
-      setFrom({
-        ...form,
-        ["MaritalS"]: "Married",
-      });
-    } else {
-      setFrom({
-        ...form,
-        [name]: value,
-        ["MaritalS"]: "Not Married",
-      });
-    }
-    //console.log(form);
+    value =
+      type === "file" ? URL.createObjectURL(fileRef.current.files[0]) : value;
+    setForm({ ...form, [name]: value });
   };
   const submittedData = (e) => {
     e.preventDefault();
     getData(form);
-    //console.log(form, fileRef.current.files[0]);
   };
   return (
     <>
@@ -95,12 +82,7 @@ export const Form = ({ getData }) => {
             <td>
               <label>
                 Marital State :
-                <input
-                  onChange={handleChange}
-                  type="checkbox"
-                  name="MaritalS"
-                  checked={IsMarried}
-                />
+                <input type="checkbox" name="Married" onChange={handleChange} />
               </label>
             </td>
             <td>
@@ -111,16 +93,6 @@ export const Form = ({ getData }) => {
                   type="file"
                   name="Profile"
                   ref={fileRef}
-                />
-              </label>
-            </td>
-            <td>
-              <label>
-                Profile Pic Link :
-                <input
-                  onChange={handleChange}
-                  type="text"
-                  name="ProfileLink"
                 />
               </label>
             </td>

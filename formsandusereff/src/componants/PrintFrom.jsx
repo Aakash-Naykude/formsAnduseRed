@@ -18,6 +18,27 @@ export const PrintForm = () => {
         setList(res);
       });
   };
+
+
+  const [lastPage, setLastPage] = useState(false)
+  useEffect(()=>{
+    getNextpage()
+  },[page])
+
+  const getNextpage = ()=>{
+    fetch(`http://localhost:5000/api/form`)
+      .then((d) => d.json())
+      .then((res) => {
+        var length = res.length;
+        var t = Math.ceil(length / 3);
+        if (page >= t) {
+          setLastPage(true);
+        } else {
+          setLastPage(false);
+        }
+      });
+  }
+
   const handleData = async (form) => {
     const payload = {
       id: nanoid(8),
@@ -25,10 +46,9 @@ export const PrintForm = () => {
       Age: form.Age,
       Adress: form.Adress,
       Department: form.Department,
-      Salary: form.Salary,
+      Salary: Number(form.Salary),
       MaritalS: form.MaritalS,
       Profile: form.Profile,
-      ProfileLink: form.ProfileLink,
     };
     setList([...list, payload]);
 
@@ -72,7 +92,7 @@ export const PrintForm = () => {
         Prev Page
       </button>
       <button onClick={handleSort}>Sort By Salary from high to low</button>
-      <button onClick={() => setPage(page + 1)}>Next Page</button>
+      <button disabled={lastPage===true} onClick={() => setPage(page + 1)}>Next Page</button>
       <h4>Page : {page}</h4>
       <table>
         <tr>

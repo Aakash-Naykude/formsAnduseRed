@@ -9,7 +9,6 @@ export const ShowForm = ({
   MaritalS,
   Profile,
   handleDelete,
-  ProfileLink
 }) => {
   return (
     <>
@@ -20,7 +19,7 @@ export const ShowForm = ({
           <td>{Adress}</td>
           <td>{Department}</td>
           <td>{Salary}</td>
-          <td><img className="imgs" src={ProfileLink} alt="image"/></td>
+          <td><img className="imgs" src={Profile} alt="image"/></td>
           <td>{MaritalS}</td>
           <td>
             <button onClick={() => handleDelete(id)}>Delete Details?</button>
